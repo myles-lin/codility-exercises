@@ -6,7 +6,7 @@ def solution(A):
     for val in A:
         val_cnt[val] += 1
         
-    ans = sorted(val_cnt, key=lambda x:val_cnt[x])
+    ans = sorted(val_cnt, key=lambda x: val_cnt[x])
 
     if val_cnt[ans[0]] == 1:
         result = ans[0]
